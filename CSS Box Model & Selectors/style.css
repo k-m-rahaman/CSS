@@ -1,0 +1,65 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 50px;
+}
+
+/* Container */
+
+.container{
+    text-align: center;
+}
+
+/* Card */
+
+.card{
+    background: white;
+    width: 300px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+
+.card h2{
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Paragraph */
+
+.card p{
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Button */
+
+button{
+    padding: 12px 20px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+
+button:hover{
+    transform: scale(1.05);
+}
