@@ -1,0 +1,71 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Heading */
+
+h1{
+    margin-bottom: 40px;
+}
+
+/* Flex Container */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+
+.card{
+    width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* Hover */
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+/* Text */
+
+.card h2{
+    margin-bottom: 15px;
+}
+
+.card p{
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Button */
+
+button{
+    padding: 12px 22px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
