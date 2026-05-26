@@ -1,0 +1,96 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Heading */
+
+h1{
+    margin-bottom: 40px;
+}
+
+/* Container */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Card */
+
+.card{
+    width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+/* Button */
+
+button{
+    padding: 14px 30px;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+/* Button Hover */
+
+button:hover{
+    transform: scale(1.1);
+}
+
+/* Animation Circle */
+
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: black;
+
+    animation: bounce 2s infinite;
+}
+
+/* Keyframes */
+
+@keyframes bounce{
+
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-40px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
