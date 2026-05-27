@@ -1,0 +1,119 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body{
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background:
+    linear-gradient(135deg,#141e30,#243b55);
+
+    color: white;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    opacity: 0.7;
+}
+
+/* Hero */
+
+.hero{
+    height: 85vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Glass Card */
+
+.card{
+    width: 400px;
+    text-align: center;
+
+    padding: 40px;
+
+    background: rgba(255,255,255,0.1);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h1{
+    margin-bottom: 15px;
+}
+
+.card p{
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Button */
+
+button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
